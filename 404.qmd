@@ -4,5 +4,5 @@ toc: false
 search: false
 ---
 
-This page doesn't exist, or it has moved. Try the [home page](/) or the
+This page doesn't exist, or it has moved. Try the [home page](index.qmd) or the
 search at the top.

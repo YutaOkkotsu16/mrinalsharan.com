@@ -8,7 +8,6 @@ project:
     - "!WRITING.md"
     - "!README.md"
   resources:
-    - CNAME
     - robots.txt
     - assets/social-card.png
     - assets/photo.*
@@ -21,7 +20,7 @@ execute:
 website:
   title: "Mrinal Sharan"
   description: "Notes on equivariant GNNs, ML inference infrastructure and GPU kernels, and a log of building Coffee AI."
-  site-url: "https://mrinalsharan.com"
+  site-url: "https://yutaokkotsu16.github.io/mrinalsharan.com"  # TODO(domain): https://mrinalsharan.com once bought
   image: assets/social-card.png
   favicon: assets/favicon.svg
   open-graph: true

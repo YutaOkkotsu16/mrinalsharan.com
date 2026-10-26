@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://mrinalsharan.com/sitemap.xml
+Sitemap: https://yutaokkotsu16.github.io/mrinalsharan.com/sitemap.xml

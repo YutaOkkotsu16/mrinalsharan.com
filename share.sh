@@ -4,7 +4,7 @@
 #   ./share.sh notes/2026-10-26-my-post
 set -euo pipefail
 cd "$(dirname "$0")"
-SITE="https://mrinalsharan.com"
+SITE="https://yutaokkotsu16.github.io/mrinalsharan.com"  # TODO(domain): https://mrinalsharan.com once bought
 
 [[ $# -eq 1 ]] || { echo "usage: ./share.sh path/to/post-folder-or-file" >&2; exit 1; }
 target=${1%/}
