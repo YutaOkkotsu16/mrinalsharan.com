@@ -1,0 +1,86 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - "**/*.qmd"
+    - "**/*.md"
+    - "**/*.ipynb"
+    - "!WRITING.md"
+    - "!README.md"
+  resources:
+    - CNAME
+    - robots.txt
+    - assets/social-card.png
+    - assets/photo.*
+
+execute:
+  # Code is only re-run when its source changes, and the results are committed
+  # to _freeze/. CI never executes notebooks or GPU code.
+  freeze: auto
+
+website:
+  title: "Mrinal Sharan"
+  description: "Notes on equivariant GNNs, ML inference infrastructure and GPU kernels, and a log of building Coffee AI."
+  site-url: "https://mrinalsharan.com"
+  image: assets/social-card.png
+  favicon: assets/favicon.svg
+  open-graph: true
+  twitter-card:
+    site: "@mymorningstar16"
+    creator: "@mymorningstar16"
+  search: true
+  navbar:
+    title: "Mrinal Sharan"
+    left:
+      - href: notes/index.qmd
+        text: Notes
+      - href: journal/index.qmd
+        text: Journal
+      - href: about.qmd
+        text: About
+    right:
+      - href: subscribe.qmd
+        text: Subscribe
+      - icon: github
+        href: https://github.com/YutaOkkotsu16
+        aria-label: GitHub
+      - icon: twitter-x
+        href: https://x.com/mymorningstar16
+        aria-label: X
+      - icon: linkedin
+        href: https://www.linkedin.com/in/mrinal-sharan/
+        aria-label: LinkedIn
+      # TODO(scholar): uncomment once you have the URL
+      # - icon: mortarboard
+      #   href: https://scholar.google.com/citations?user=YOUR_ID
+      #   aria-label: Google Scholar
+  page-footer:
+    left: "© 2026 Mrinal Sharan"
+    right:
+      - text: RSS
+        href: subscribe.qmd
+      - text: Built with Quarto
+        href: https://quarto.org
+
+format:
+  html:
+    theme:
+      light: [cosmo, assets/theme/common.scss, assets/theme/light.scss]
+      dark: [cosmo, assets/theme/common.scss, assets/theme/dark.scss]
+    respect-user-color-scheme: true
+    highlight-style:
+      light: github
+      dark: github-dark
+    html-math-method: katex
+    code-copy: true
+    code-overflow: wrap
+    smooth-scroll: true
+    link-external-newwindow: false
+    canonical-url: true
+    include-in-header: _partials/head.html
+    template-partials:
+      - _partials/title-block.html      # unchanged copy; required to override the next one
+      - _partials/title-metadata.html   # adds reading time
+      - _partials/_title-meta-author.html  # unchanged copy; title-metadata needs it
+    filters:
+      - _filters/post-meta.lua

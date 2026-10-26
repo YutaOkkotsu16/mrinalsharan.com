@@ -1,0 +1,17 @@
+---
+title: "Example: week one"
+description: "A template journal entry. Short, informal, and a draft that never goes live."
+date: 2026-10-26
+categories: [coffee-ai]
+draft: true
+---
+
+Journal posts are shorter and looser than notes. A few lines is fine.
+
+**Shipped.** What went out this week.
+
+**Learned.** One thing that surprised you, from a customer call or the code.
+
+**Next.** What you're doing next week and why.
+
+> A quote from a customer conversation works well here.

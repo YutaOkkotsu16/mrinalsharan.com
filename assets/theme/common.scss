@@ -1,0 +1,106 @@
+/*-- scss:defaults --*/
+
+// Serif for long-form reading, sans for UI and headings, mono for code.
+$font-family-serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+$font-family-sans-serif: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+$font-family-monospace: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+$font-family-base: $font-family-serif;
+$headings-font-family: $font-family-sans-serif;
+$headings-font-weight: 600;
+$font-size-root: 18px;
+$line-height-base: 1.7;
+
+$border-radius: 4px;
+
+/*-- scss:rules --*/
+
+
+// UI chrome in sans so the serif is reserved for prose.
+.navbar, .nav-footer, .quarto-listing, .quarto-title-meta, .quarto-categories,
+.sidebar, #TOC, .post-nav, .callout-header, .listing-categories, figcaption,
+.btn, .home-links {
+  font-family: $font-family-sans-serif;
+}
+
+.navbar {
+  border-bottom: 1px solid $border-color;
+  box-shadow: none;
+  .navbar-title { font-weight: 600; letter-spacing: -0.01em; }
+  .nav-link { font-size: 0.9rem; }
+}
+
+// Comfortable measure for long-form text (~70 characters).
+#quarto-document-content > p,
+#quarto-document-content > ul,
+#quarto-document-content > ol { max-width: 42rem; }
+
+h1, h2, h3, h4 { letter-spacing: -0.015em; }
+h2 { margin-top: 2.5rem; border-bottom: none; }
+.quarto-title .title { font-size: 2.1rem; line-height: 1.2; }
+.quarto-title-block .description { font-size: 1.1rem; color: $text-muted; }
+
+a { text-underline-offset: 0.18em; text-decoration-thickness: 1px; }
+
+code { font-size: 0.85em; }
+div.sourceCode { border: 1px solid $border-color; border-radius: $border-radius; }
+
+.katex { font-size: 1.05em; }
+.katex-display { overflow-x: auto; overflow-y: hidden; padding: 0.25rem 0; }
+
+figure img, .figure img { border-radius: $border-radius; }
+figcaption { font-size: 0.85rem; color: $text-muted; }
+
+// Listings: quiet, text-first, no cards.
+.quarto-listing-table { font-size: 0.95rem; }
+.quarto-listing-table th { font-weight: 500; color: $text-muted; }
+.quarto-post .body h3.listing-title { font-size: 1.2rem; margin-bottom: 0.25rem; }
+.quarto-post .listing-description { font-size: 0.95rem; color: $text-muted; }
+
+// Home header: photo + short intro.
+.home-intro {
+  display: flex;
+  gap: 1.75rem;
+  align-items: flex-start;
+  margin: 1rem 0 2.5rem;
+  img.home-photo {
+    width: 128px; height: 128px; flex: none;
+    border-radius: 50%; object-fit: cover;
+  }
+  p { margin-bottom: 0.75rem; }
+}
+.home-links { font-size: 0.9rem; a { margin-right: 1rem; } }
+
+@media (max-width: 576px) {
+  html { font-size: 17px; }
+  .home-intro { flex-direction: column; align-items: stretch; gap: 1rem; }
+  .quarto-title .title { font-size: 1.7rem; }
+}
+
+// Previous / next links at the end of a post.
+.post-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 3rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid $border-color;
+  font-size: 0.9rem;
+  a { text-decoration: none; max-width: 48%; }
+  .post-nav-next { margin-left: auto; text-align: right; }
+  .post-nav-label { display: block; color: $text-muted; font-size: 0.8rem; }
+}
+
+.reading-time { color: $text-muted; }
+
+// Home photo: Quarto wraps the image in a <p>; stop it shrinking in the flex row.
+.home-intro > p:first-child { flex: none; margin: 0; }
+
+// Listings: narrow date column, sans metadata.
+div.quarto-listing .quarto-post .metadata {
+  flex: 0 0 auto;
+  width: 7.5rem;
+  font-family: $font-family-sans-serif;
+  color: $text-muted;
+}
+div.quarto-listing .quarto-post .body { flex: 1 1 auto; min-width: 0; }

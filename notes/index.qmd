@@ -1,0 +1,18 @@
+---
+title: "Notes"
+description: "Technical writing: deep dives, paper reproductions, kernels and things I'm learning."
+listing:
+  contents: "*/index.*"
+  type: default
+  sort: "date desc"
+  fields: [date, title, description, reading-time, categories]
+  date-format: "D MMM YYYY"
+  categories: true
+  sort-ui: false
+  filter-ui: false
+  feed:
+    title: "Mrinal Sharan — Notes"
+    items: 50
+page-layout: full
+title-block-banner: false
+---

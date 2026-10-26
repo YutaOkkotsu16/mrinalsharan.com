@@ -1,0 +1,17 @@
+---
+title: "Journal"
+description: "A shorter, informal log of building Coffee AI."
+listing:
+  contents: "*/index.*"
+  type: table
+  sort: "date desc"
+  fields: [date, title, reading-time]
+  field-display-names:
+    reading-time: ""
+  date-format: "D MMM YYYY"
+  sort-ui: false
+  filter-ui: false
+  feed:
+    title: "Mrinal Sharan — Journal"
+    items: 50
+---

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 240" font-family="Inter, sans-serif" font-size="14">
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#d1495b"/></marker></defs>
+  <rect width="640" height="240" fill="#ffffff"/>
+  <g stroke="#59636e" stroke-width="2"><line x1="110" y1="140" x2="170" y2="100"/><line x1="170" y1="100" x2="230" y2="140"/></g>
+  <g fill="#0b5cad"><circle cx="110" cy="140" r="14"/><circle cx="170" cy="100" r="18"/><circle cx="230" cy="140" r="14"/></g>
+  <g stroke="#d1495b" stroke-width="3" marker-end="url(#a)"><line x1="110" y1="140" x2="80" y2="180"/><line x1="230" y1="140" x2="260" y2="180"/></g>
+  <text x="170" y="220" text-anchor="middle" fill="#1f2328">input x, forces F(x)</text>
+  <text x="320" y="125" text-anchor="middle" fill="#59636e" font-size="22">→ R →</text>
+  <g transform="rotate(35 470 120)">
+    <g stroke="#59636e" stroke-width="2"><line x1="410" y1="140" x2="470" y2="100"/><line x1="470" y1="100" x2="530" y2="140"/></g>
+    <g fill="#0b5cad"><circle cx="410" cy="140" r="14"/><circle cx="470" cy="100" r="18"/><circle cx="530" cy="140" r="14"/></g>
+    <g stroke="#d1495b" stroke-width="3" marker-end="url(#a)"><line x1="410" y1="140" x2="380" y2="180"/><line x1="530" y1="140" x2="560" y2="180"/></g>
+  </g>
+  <text x="470" y="220" text-anchor="middle" fill="#1f2328">input Rx, forces R F(x)</text>
+</svg>

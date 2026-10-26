@@ -1,0 +1,23 @@
+# Applies to every post under notes/.
+author: "Mrinal Sharan"
+date-format: "D MMMM YYYY"
+toc: true
+toc-depth: 3
+toc-title: "Contents"
+title-block-categories: true
+citation-location: margin
+reference-location: margin
+# giscus comments (notes only). TODO(giscus): see WRITING.md → "Comments",
+# fill in repo-id and category-id, then uncomment.
+# comments:
+#   giscus:
+#     repo: YutaOkkotsu16/REPO_NAME
+#     repo-id: "R_xxxxxxxx"
+#     category: "Comments"
+#     category-id: "DIC_xxxxxxxx"
+#     mapping: pathname
+#     reactions-enabled: true
+#     loading: lazy
+#     theme:
+#       light: light
+#       dark: dark_dimmed

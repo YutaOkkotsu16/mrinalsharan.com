@@ -1,0 +1,40 @@
+---
+pagetitle: "Mrinal Sharan"
+toc: false
+listing:
+  id: recent
+  contents:
+    - "notes/*/index.*"
+    - "journal/*/index.*"
+  type: default
+  sort: "date desc"
+  max-items: 5
+  fields: [date, title, description, reading-time]
+  date-format: "D MMM YYYY"
+  sort-ui: false
+  filter-ui: false
+  feed:
+    title: "Mrinal Sharan — all posts"
+    items: 50
+---
+
+::: {.home-intro}
+![](assets/photo.svg){.home-photo fig-alt="Photo of Mrinal Sharan"}
+
+:::: {}
+I'm CTO and co-founder of Coffee AI, where we build AI tools for UK trades contractors, and an incoming DPhil student at Oxford in the Intelligent Earth CDT.
+
+My research background is in machine-learned interatomic potentials: my Master's thesis at Oxford fine-tuned MACE models for halide perovskites, and I contribute to [autoplex](https://github.com/autoatml/autoplex).
+
+These days I think about equivariant GNNs, ML inference infrastructure and GPU kernels. This site is a public record of what I'm learning and building.
+
+::: {.home-links}
+[Notes](notes/index.qmd) [Journal](journal/index.qmd) [About](about.qmd) [GitHub](https://github.com/YutaOkkotsu16) [X](https://x.com/mymorningstar16) [LinkedIn](https://www.linkedin.com/in/mrinal-sharan/)
+:::
+::::
+:::
+
+## Recent writing
+
+::: {#recent}
+:::

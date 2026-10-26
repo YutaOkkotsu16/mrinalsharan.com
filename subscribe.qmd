@@ -1,0 +1,15 @@
+---
+title: "Subscribe"
+toc: false
+---
+
+Follow new posts with any RSS reader:
+
+- [All posts](index.xml)
+- [Notes only](notes/index.xml)
+- [Journal only](journal/index.xml)
+
+<!-- TODO(newsletter): when you set up Buttondown or Substack, replace this
+paragraph with the embed form or a link to the signup page. -->
+An email newsletter is coming soon. Until then, RSS or
+[X](https://x.com/mymorningstar16) are the best ways to follow along.

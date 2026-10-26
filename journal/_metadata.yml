@@ -1,0 +1,8 @@
+# Applies to every post under journal/.
+author: "Mrinal Sharan"
+date-format: "D MMMM YYYY"
+toc: true
+toc-depth: 2
+toc-title: "Contents"
+title-block-categories: true
+reference-location: margin

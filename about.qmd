@@ -1,0 +1,44 @@
+---
+title: "About"
+toc: false
+---
+
+<!-- TODO(about): placeholder text drafted from your brief. Edit freely. -->
+
+I'm Mrinal Sharan (MorningStar online). I build ML systems and study how to make
+machine-learned models of physics faster and more reliable.
+
+**Now.** I'm CTO and co-founder of Coffee AI, which builds B2B AI tools for UK
+trades contractors. I'm also an incoming DPhil student at the University of
+Oxford in the Intelligent Earth Centre
+for Doctoral Training, working on AI/ML.
+
+**Research background.** I did my Master's at Oxford and finished top of my
+cohort. My thesis was on machine-learned interatomic potentials for halide
+perovskites, specifically fine-tuning [MACE](https://github.com/ACEsuit/mace)
+foundation models to get close to DFT accuracy at a small fraction of the cost.
+
+**Interests.** Equivariant graph neural networks, ML inference infrastructure,
+and GPU kernels: in short, the path from a model on paper to a model that runs
+fast on real hardware.
+
+**This site.** [Notes](notes/index.qmd) holds technical writing: deep dives,
+paper reproductions and kernels. The [Journal](journal/index.qmd) is a shorter,
+informal log of building Coffee AI.
+
+## Publications and open source
+
+- **autoplex**: automated exploration and fitting of ML interatomic potentials.
+  I contributed the CASTEP backend.
+  [Code](https://github.com/autoatml/autoplex) ·
+  Paper: Y. Liu *et al.*, *Nature Communications* **16**, 7666 (2025),
+  [doi:10.1038/s41467-025-62510-6](https://doi.org/10.1038/s41467-025-62510-6).
+- *Master's thesis*: MACE fine-tuning for halide perovskites (2025).
+  <!-- TODO(about): add a link to the thesis PDF or repo if public. -->
+
+## Contact
+
+The best way to reach me is a DM on [X](https://x.com/mymorningstar16) or
+[LinkedIn](https://www.linkedin.com/in/mrinal-sharan/). Code is on
+[GitHub](https://github.com/YutaOkkotsu16).
+<!-- TODO(email): add a contact address when you want one public. -->
